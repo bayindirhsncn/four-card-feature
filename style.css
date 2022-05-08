@@ -1,0 +1,197 @@
+:root {
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--VeryLightGray);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+main {
+    margin: 0 auto;
+    margin: 1rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    text-align: center;
+    color: var(--VeryDarkBlue);
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+
+.header span {
+    color: var(--VeryDarkBlue);
+    font-weight: 700;
+}
+
+
+.header p {
+    color: var(--GrayishBlue);
+    text-align: center;
+}
+
+.info {
+    padding: 1rem;
+    width: 580px;
+}
+
+section {
+    width: 550px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mcards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.cardl,
+.cardm,
+.cardll,
+.cardmt {
+    background-color: white;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 360px;
+    border: none;
+    border-radius: 0.325rem;
+    -webkit-box-shadow: 0px 10px 23px -10px rgba(165, 176, 250, 1);
+    -moz-box-shadow: 0px 10px 23px -10px rgba(165, 176, 250, 1);
+    box-shadow: 0px 10px 23px -10px rgba(165, 176, 250, 1);
+}
+
+.cardll {
+    border-top: 4px solid var(--Cyan);
+}
+
+.cardl {
+    border-top: 4px solid var(--Blue);
+}
+
+.cardm {
+    border-top: 4px solid var(--Orange);
+}
+
+.cardmt {
+    border-top: 4px solid var(--Red);
+}
+
+.cardl img,
+.cardm img,
+.cardll img,
+.cardmt img {
+    float: right;
+    width: 70px;
+    height: 70px;
+}
+
+.cardl h2,
+.cardm h2,
+.cardmt h2,
+.cardll h2 {
+    color: var(--VeryDarkBlue);
+}
+
+.cardl p,
+.cardm p,
+.cardmt p,
+.cardll p {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: var(--GrayishBlue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .header h1 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 200;
+    }
+
+    .header p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .info {
+        padding: 1rem;
+        width: 370px;
+    }
+
+    section {
+        padding: 0rem 2rem 2rem 2rem;
+        width: 370px;
+    }
+
+    .cardl,
+    .cardm,
+    .cardll,
+    .cardmt {
+        max-width: 300px;
+
+    }
+
+    .cardm {
+        margin-bottom: 2rem;
+    }
+
+    .cardll {
+        margin-bottom: 2rem;
+    }
+
+}
