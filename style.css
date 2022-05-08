@@ -64,7 +64,7 @@ main {
     width: 580px;
 }
 
-section {
+.prg {
     width: 550px;
 }
 
@@ -173,7 +173,7 @@ section {
         width: 370px;
     }
 
-    section {
+    .prg {
         padding: 0rem 2rem 2rem 2rem;
         width: 370px;
     }
